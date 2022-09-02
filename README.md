@@ -24,7 +24,7 @@ The following sample command can help you create an emulator, which will help yo
 sdkmanager "system-images;android-26;google_apis;x86"
 avdmanager create avd --force --name Android8.0 --package 'system-images;android-26;google_apis;x86' --abi google_apis/x86 --sdcard 512M --device "pixel_xl"
 ```
-Next, you can start a emulator with the following commands:
+Next, you can start an emulator with the following commands:
 ```
 emulator -avd Android8.0 -read-only -port 5554 
 ```
@@ -34,8 +34,15 @@ emulator -avd Android8.0 -read-only -port 5554
 #### Detect DMEs
 If you have downloaded our project and configured the environment, you only need to enter "download_path/home" to execute our sample app with the following command:
 ```
-python code/start.py -app_path app/anymemo.apk -json_name _anymemo -device_serial emulator-5554 -root_path download_path/home -choice 1 -testcase_count 50 -event_num 400 -max_time 57600 -result_path output
+python code/start.py -app_path app/anymemo.apk -json_name _anymemo -device_serial emulator-5554 -root_path download_path/home -choice 1 -event_num 400 -max_time 57600 -result_path output
 ```
+Here, 
+* `-app_path` path of the app under test (AUT). 
+* `-json_name` name of the folder that stores the AUT's DMFs
+* `-root_path` up-level directory of the folder that stores all DMFs
+* `-choice` 1: run property-based fuzzing to detect DMEs, 2: record DMFs
+* `-event_num` number of events in each test
+* `-max_time` allocates how many seconds for PBFDroid to detect DMEs
 
 #### Record DMF
 You can start the help module for defining DMF with the following command:
@@ -48,6 +55,11 @@ python code/start.py -root_path dmf/ -choice 2 -app_path app/APPNAME.apk -json_n
     home
        |
        |--- code:                           The source code of PBFDroid
-       |--- app:                            Apk files of 12 open source apps used in our experiment
+           |
+           |--- start.py:                       The entry of the tool, which defines the input parameters
+           |--- fuzzing.py:                     The main part of our property-based fuzzing approach
+           |--- record.py:                      The main part of DMF instantiator
+           |
+       |--- app:                            The apk files of 12 open source apps used in our experiment
        |--- dmf:                            The folder where the defined DMFs are stored
        |
