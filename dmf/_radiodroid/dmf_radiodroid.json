@@ -1,0 +1,100 @@
+{"dmfs":[{
+    "datatype": "radio",
+    "events": [
+        {
+            "action": "click",
+            "force": true,
+            "text": "",
+            "widget": "e1_widget"
+        },
+        {
+            "action": "click",
+            "force": true,
+            "text": "",
+            "widget": "e2_widget"
+        },
+        {
+            "action": "click",
+            "force": true,
+            "text": "",
+            "widget": "e3_widget"
+        }
+    ],
+    "impacts": [
+        {
+            "object": "add_name.text",
+            "operator": "add"
+        }
+    ],
+    "name": "add radio",
+    "post-conditions": [
+        {
+            "UI_layout_num": "3",
+            "datatype": "",
+            "relation": "in",
+            "widget": "add_object"
+        }
+    ],
+    "preconditions": [
+        {
+            "UI_layout_num": "0",
+            "datatype": "",
+            "relation": "in",
+            "widget": "e1_widget"
+        }
+    ],
+    "proportion": "10",
+    "type": "add",
+    "widgets": [
+        {
+            "UI_layout_num": "0",
+            "class": "",
+            "content-desc": "",
+            "instance": "",
+            "name": "e1_widget",
+            "resource-id": "",
+            "text": "",
+            "xpath": "//*[@resource-id=\"net.programmierecke.radiodroid2:id/recyclerViewStations\"]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageButton[1]"
+        },
+        {
+            "UI_layout_num": "1",
+            "class": "",
+            "content-desc": "",
+            "instance": "",
+            "name": "e2_widget",
+            "resource-id": "net.programmierecke.radiodroid2:id/buttonBookmark",
+            "text": "",
+            "xpath": ""
+        },
+        {
+            "UI_layout_num": "2",
+            "class": "",
+            "content-desc": "",
+            "instance": "",
+            "name": "e3_widget",
+            "resource-id": "",
+            "text": "",
+            "xpath": "//*[@resource-id=\"net.programmierecke.radiodroid2:id/nav_item_starred\"]/android.widget.ImageView[1]"
+        },
+        {
+            "UI_layout_num": "0",
+            "class": "",
+            "content-desc": "",
+            "instance": "0",
+            "name": "add_name",
+            "resource-id": "net.programmierecke.radiodroid2:id/textViewTitle",
+            "text": "",
+            "xpath": ""
+        },
+        {
+            "UI_layout_num": "3",
+            "class": "",
+            "content-desc": "",
+            "instance": "",
+            "name": "add_object",
+            "resource-id": "net.programmierecke.radiodroid2:id/textViewTitle",
+            "text": "add_name.text",
+            "xpath": ""
+        }
+    ]
+}]}
