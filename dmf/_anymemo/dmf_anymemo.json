@@ -1,0 +1,976 @@
+{
+    "dmfs": [
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "proportion": "20",
+            "name": "add card",
+            "post-conditions": [
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/recent_item_more_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "Preview/edit",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e3_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/new_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e5_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/save",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "add_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "add_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "longclick",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e5_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e6_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                },
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "proportion": "10",
+            "name": "edit card",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "6",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "type": "edit",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/recent_item_more_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "Card list",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e3_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/item_question",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]"
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e5_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e6_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/save",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "add_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "delete_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "add_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/item_question",
+                    "text": "add_name.text",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "delete_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/item_question",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "card::random",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                }
+            ],
+            "impacts": [],
+            "proportion": "30",
+            "name": "search card",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "search_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "card",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "type": "search",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/recent_item_more_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "Card list",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e3_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/action_search",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e5_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//*[@resource-id=\"com.google.android.inputmethod.latin:id/key_pos_ime_action\"]/android.widget.ImageView[2]"
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "search_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "search_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/item_question",
+                    "text": "search_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "longclick",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                }
+            ],
+            "impacts": [],
+            "proportion": "10",
+            "name": "view card",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "2",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "view_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "special_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "special_widget2"
+                }
+            ],
+            "type": "view",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "special_widget2",
+                    "resource-id": "",
+                    "text": "Preview/edit",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "special_widget",
+                    "resource-id": "",
+                    "text": "Mark as learned",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/item_question",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//android.widget.ListView/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "view_name",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/item_question",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "view_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "view_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "proportion": "10",
+            "name": "delete card",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/recent_item_more_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e2_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/edit",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e3_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/editmenu_delete_id",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "e4_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "delete_name",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "proportion": "10",
+                    "name": "delete_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "name": "delete1 card",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/recent_item_more_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "Preview/edit",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/editmenu_delete_id",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "delete_name",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "card",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                },
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "edit1 card",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                },
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "edit",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/recent_item_more_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "Preview/edit",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/edit_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/save",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/edit_dialog_question_entry",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "add_name.text",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "delete_name",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "org.liberty.android.fantastischmemo:id/card_text_view",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,655 @@
+{
+    "dmfs": [
+        {
+            "datatype": "note",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": false,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "notpre_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "add note",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "pre_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "notpre_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "note",
+                    "relation": "smaller",
+                    "widget": ""
+                }
+            ],
+            "proportion": "5",
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "notpre_widget",
+                    "resource-id": "",
+                    "text": "CLOSE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "",
+                    "text": "Notepad",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//androidx.compose.ui.platform.y0/android.view.View[1]/android.view.View[1]/android.widget.Button[1]"
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "Save",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "SAVE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "note",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": false,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": false,
+                    "text": "",
+                    "widget": "e5_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                },
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "edit note",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                },
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "pre_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "notpre_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "note",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "5",
+            "type": "edit",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "notpre_widget",
+                    "resource-id": "",
+                    "text": "CLOSE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "",
+                    "text": "Notepad",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//androidx.compose.ui.platform.y0/android.view.View[1]/android.view.View[1]/android.view.View[2]"
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "Edit",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "Save",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "",
+                    "text": "SAVE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "",
+                    "text": "add_name.text",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "note",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "name": "delete note",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "3",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "note",
+                    "relation": "is not empty",
+                    "widget": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "notpre_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "pre_widget"
+                }
+            ],
+            "proportion": "2",
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "notpre_widget",
+                    "resource-id": "",
+                    "text": "CLOSE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "",
+                    "text": "Notepad",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//androidx.compose.ui.platform.y0/android.view.View[1]/android.view.View[1]/android.view.View[2]"
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "Delete",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "DELETE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "delete_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "note",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "view note",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "1",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "view_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "notpre_widget"
+                },{
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "pre_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "note",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "2",
+            "type": "view",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "notpre_widget",
+                    "resource-id": "",
+                    "text": "CLOSE",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "",
+                    "text": "Notepad",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//androidx.compose.ui.platform.y0/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "view_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "view_object",
+                    "resource-id": "",
+                    "text": "view_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "not",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "back",
+                    "force": true,
+                    "text": "",
+                    "widget": ""
+                }
+            ],
+            "impacts": [],
+            "name": "search note",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "2",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "search_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "habit",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "5",
+            "type": "search",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "Select notes",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "search_object",
+                    "resource-id": "",
+                    "text": "note::random",
+                    "xpath": ""
+                }
+            ]
+        }
+    ]
+}

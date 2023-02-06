@@ -1,0 +1,13 @@
+{
+    "keyviews": [
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"DENY\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"Hide\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"com.amaze.filemanager:id/md_buttonDefaultPositive\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        }
+    ]
+}

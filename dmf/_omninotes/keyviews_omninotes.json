@@ -1,0 +1,31 @@
+{
+    "keyviews": [
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"it.feio.android.omninotes.alpha:id/note_title\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"it.feio.android.omninotes.alpha:id/fab_expand_menu_button\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"Trash\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"Archive\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"it.feio.android.omninotes.alpha:id/category_marker\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"it.feio.android.omninotes.alpha:id/note_title\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"it.feio.android.omninotes.alpha:id/note_date\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"it.feio.android.omninotes.alpha:id/snackbar_placeholder\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"#any#\" class=\"android.widget.LinearLayout\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        }
+    ]
+}

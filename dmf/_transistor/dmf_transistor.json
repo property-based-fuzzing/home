@@ -1,0 +1,529 @@
+{
+    "dmfs": [
+        {
+            "datatype": "station",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "station::random",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "back",
+                    "force": true,
+                    "text": "",
+                    "widget": ""
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "search station",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "search_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "pre_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "station",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "10",
+            "type": "search",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "org.y20k.transistor:id/card_add_new_station",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "android:id/button2",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "search_name",
+                    "resource-id": "org.y20k.transistor:id/search_src_text",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "search_object",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "search_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "station",
+            "events": [
+                {
+                    "action": "scroll_right",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "name": "delete station",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "2",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "pre_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "station",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "5",
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "org.y20k.transistor:id/edit_station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "org.y20k.transistor:id/station_card",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "delete_name",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "station",
+            "events": [
+                {
+                    "action": "longclick",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                },
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "edit station",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "3",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                },
+                {
+                    "UI_layout_num": "3",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "pre_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "station",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "20",
+            "type": "edit",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "pre_widget",
+                    "resource-id": "org.y20k.transistor:id/card_settings",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "org.y20k.transistor:id/save_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "org.y20k.transistor:id/edit_station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "add_name.text",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "delete_name",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "station",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": false,
+                    "text": "",
+                    "widget": "e25_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": false,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "sleep",
+                    "force": true,
+                    "text": "5",
+                    "widget": ""
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add noduplicate"
+                }
+            ],
+            "name": "add station",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "station",
+                    "relation": "smaller",
+                    "widget": ""
+                }
+            ],
+            "proportion": "20",
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "org.y20k.transistor:id/card_add_new_station",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e25_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//*[@resource-id=\"com.google.android.inputmethod.latin:id/key_pos_ime_action\"]/android.widget.ImageView[2]"
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "org.y20k.transistor:id/station_name",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        }
+    ]
+}

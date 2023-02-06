@@ -1,0 +1,578 @@
+{
+    "dmfs": [
+        {
+            "datatype": "file",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e6_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "add file",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "6",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "net.gsantner.markor:id/fab_add_new_item",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "net.gsantner.markor:id/new_file_dialog__type",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "android:id/text1",
+                    "text": "None",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e6_widget",
+                    "resource-id": "com.android.systemui:id/back",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "net.gsantner.markor:id/new_file_dialog__name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "file",
+            "events": [
+                {
+                    "action": "longclick",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "name": "delete file",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "3",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "e1_widget",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "net.gsantner.markor:id/action_delete_selected_items",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "delete_name",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "file",
+            "events": [
+                {
+                    "action": "longclick",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                },
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "edit file",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                },
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "edit",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "e1_widget",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "net.gsantner.markor:id/action_rename_selected_item",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "net.gsantner.markor:id/new_name",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "add_name.text",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "delete_name",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "file",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "file::random",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "search file",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "3",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "search_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "file",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "10",
+            "type": "search",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "net.gsantner.markor:id/action_search",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "android:id/button1",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "search_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "search_object",
+                    "resource-id": "android:id/text1",
+                    "text": "search_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "file",
+            "events": [
+                {
+                    "action": "longclick",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "view file",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "2",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "view_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "view",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "e1_widget",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "net.gsantner.markor:id/action_info_selected_item",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "view_name",
+                    "resource-id": "net.gsantner.markor:id/opoc_filesystem_item__title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "view_object",
+                    "resource-id": "net.gsantner.markor:id/ui__fileinfodialog__name",
+                    "text": "view_name.text",
+                    "xpath": ""
+                }
+            ]
+        }
+    ]
+}

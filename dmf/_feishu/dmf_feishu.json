@@ -1,0 +1,658 @@
+{
+    "dmfs": [
+        {
+            "datatype": "folder",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e5_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e6_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e7_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "add folder",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "7",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "com.ss.android.lark:id/textItem",
+                    "text": "\u4e91\u6587\u6863",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "\u6211\u7684\u7a7a\u95f4",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "com.ss.android.lark:id/common_create_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "com.ss.android.lark:id/list_menu_name",
+                    "text": "\u6587\u4ef6\u5939",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e6_widget",
+                    "resource-id": "com.ss.android.lark:id/ud_dialog_btn_primary",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e7_widget",
+                    "resource-id": "com.ss.android.lark:id/title_bar_back",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "4",
+                    "name": "add_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "7",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "folder",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "name": "delete folder",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "com.ss.android.lark:id/textItem",
+                    "text": "\u4e91\u6587\u6863",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "\u6211\u7684\u7a7a\u95f4",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//*[@resource-id=\"com.ss.android.lark:id/list_recycler_view\"]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ImageView[2]"
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "com.ss.android.lark:id/more_item_title",
+                    "text": "\u79fb\u9664",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "com.ss.android.lark:id/ud_dialog_btn_primary",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "delete_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "folder",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "random",
+                    "widget": "e5_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e6_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                },
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "edit folder",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "6",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                },
+                {
+                    "UI_layout_num": "6",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "edit",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "com.ss.android.lark:id/textItem",
+                    "text": "\u4e91\u6587\u6863",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "\u6211\u7684\u7a7a\u95f4",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//*[@resource-id=\"com.ss.android.lark:id/list_recycler_view\"]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ImageView[2]"
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "\u91cd\u547d\u540d",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e6_widget",
+                    "resource-id": "com.ss.android.lark:id/ud_dialog_btn_primary",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "com.ss.android.lark:id/ud_dialog_content_et",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "",
+                    "text": "add_name.text",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "3",
+                    "name": "delete_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "folder",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "folder::random",
+                    "widget": "e4_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "search folder",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "search_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "folder",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "10",
+            "type": "search",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "com.ss.android.lark:id/textItem",
+                    "text": "\u4e91\u6587\u6863",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "\u6211\u7684\u7a7a\u95f4",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//*[@resource-id=\"com.ss.android.lark:id/lark_main_title_menu_container\"]/android.widget.ImageView[1]"
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "search_name",
+                    "resource-id": "com.ss.android.lark:id/search_bar_item_search_bar",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "search_object",
+                    "resource-id": "",
+                    "text": "search_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "folder",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "view folder",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "1",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "view_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "view",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "com.ss.android.lark:id/list_grid_item_title",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "1",
+                    "name": "view_name",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "view_object",
+                    "resource-id": "",
+                    "text": "view_name.text",
+                    "xpath": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,740 @@
+{
+    "dmfs": [
+        {
+            "datatype": "channel",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "add channel",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "5",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "free.rm.skytube.extra:id/options_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//android.widget.ListView/android.widget.LinearLayout[8]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]"
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "Navigate up",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_badge_icon",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "free.rm.skytube.extra:id/reason_text_view",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "channel",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "edit",
+                    "force": true,
+                    "text": "channel::random",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "search channel",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "4",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "search_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                },
+                {
+                    "UI_layout_num": "",
+                    "datatype": "channel",
+                    "relation": "is not empty",
+                    "widget": ""
+                }
+            ],
+            "proportion": "10",
+            "type": "search",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_search",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.EditText",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//*[@resource-id=\"com.google.android.inputmethod.latin:id/key_pos_ime_action\"]/android.widget.ImageView[2]"
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_badge_icon",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "search_name",
+                    "resource-id": "free.rm.skytube.extra:id/search_src_text",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "search_object",
+                    "resource-id": "free.rm.skytube.extra:id/reason_text_view",
+                    "text": "search_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "channel",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e6_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e7_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e8_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e9_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e10_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e11_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "delete_name.text",
+                    "operator": "delete"
+                }
+            ],
+            "name": "delete channel",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "11",
+                    "datatype": "",
+                    "relation": "not in",
+                    "widget": "delete_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "delete",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_badge_icon",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "free.rm.skytube.extra:id/md_buttonDefaultPositive",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "android:id/title",
+                    "text": "Channel Blacklist",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "free.rm.skytube.extra:id/check_box",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "free.rm.skytube.extra:id/md_buttonDefaultPositive",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "Navigate up",
+                    "instance": "",
+                    "name": "e6_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e7_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_badge_icon",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "7",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e8_widget",
+                    "resource-id": "free.rm.skytube.extra:id/md_buttonDefaultNeutral",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "8",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e9_widget",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "9",
+                    "class": "",
+                    "content-desc": "Navigate up",
+                    "instance": "",
+                    "name": "e10_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "10",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e11_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_badge_icon",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "delete_name",
+                    "resource-id": "free.rm.skytube.extra:id/reason_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "11",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "delete_object",
+                    "resource-id": "free.rm.skytube.extra:id/reason_text_view",
+                    "text": "delete_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "channel",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                }
+            ],
+            "impacts": [],
+            "name": "view channel",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "1",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "view_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "view",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "view_name",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "android.widget.TextView",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "view_object",
+                    "resource-id": "",
+                    "text": "view_name.text",
+                    "xpath": ""
+                }
+            ]
+        },
+        {
+            "datatype": "channel",
+            "events": [
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e1_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e2_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e3_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e4_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e5_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e6_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e7_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e8_widget"
+                },
+                {
+                    "action": "click",
+                    "force": true,
+                    "text": "",
+                    "widget": "e9_widget"
+                }
+            ],
+            "impacts": [
+                {
+                    "object": "add_name.text",
+                    "operator": "add"
+                }
+            ],
+            "name": "add1 channel",
+            "post-conditions": [
+                {
+                    "UI_layout_num": "9",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "add_object"
+                }
+            ],
+            "preconditions": [
+                {
+                    "UI_layout_num": "0",
+                    "datatype": "",
+                    "relation": "in",
+                    "widget": "e1_widget"
+                }
+            ],
+            "proportion": "10",
+            "type": "add",
+            "widgets": [
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e1_widget",
+                    "resource-id": "free.rm.skytube.extra:id/sub_channel_name_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "1",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e2_widget",
+                    "resource-id": "free.rm.skytube.extra:id/options_button",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "2",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e3_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": "//android.widget.ListView/android.widget.LinearLayout[8]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]"
+                },
+                {
+                    "UI_layout_num": "3",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e4_widget",
+                    "resource-id": "com.android.systemui:id/back",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "4",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e5_widget",
+                    "resource-id": "com.android.systemui:id/back",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "5",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e6_widget",
+                    "resource-id": "com.android.systemui:id/back",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "6",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e7_widget",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "7",
+                    "class": "",
+                    "content-desc": "Navigate up",
+                    "instance": "",
+                    "name": "e8_widget",
+                    "resource-id": "",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "8",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "e9_widget",
+                    "resource-id": "free.rm.skytube.extra:id/menu_badge_icon",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "0",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "0",
+                    "name": "add_name",
+                    "resource-id": "free.rm.skytube.extra:id/channel_text_view",
+                    "text": "",
+                    "xpath": ""
+                },
+                {
+                    "UI_layout_num": "9",
+                    "class": "",
+                    "content-desc": "",
+                    "instance": "",
+                    "name": "add_object",
+                    "resource-id": "free.rm.skytube.extra:id/reason_text_view",
+                    "text": "add_name.text",
+                    "xpath": ""
+                }
+            ]
+        }
+    ]
+}

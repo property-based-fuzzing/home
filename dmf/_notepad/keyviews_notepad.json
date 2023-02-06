@@ -1,0 +1,22 @@
+{
+    "keyviews": [
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"Save\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"DELETE\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"Delete\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"Edit\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"[1188,2140][1384,2336]\" />"
+        },
+        {
+            "view": "<node NAF=\"#any#\" index=\"#any#\" text=\"#any#\" resource-id=\"#any#\" class=\"#any#\" package=\"#any#\" content-desc=\"#any#\" checkable=\"#any#\" checked=\"#any#\" clickable=\"#any#\" enabled=\"#any#\" focusable=\"#any#\" focused=\"#any#\" scrollable=\"#any#\" long-clickable=\"#any#\" password=\"#any#\" selected=\"#any#\" visible-to-user=\"#any#\" bounds=\"[964,140][1048,224]\" />"
+        }
+    ]
+}
