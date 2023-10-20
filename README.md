@@ -49,7 +49,7 @@ emulator -avd Android8.0 -read-only -port 5554
 
 ### Run
 
-#### Detect DMEs
+#### Detect DMEs ([video tutorial](https://1drv.ms/f/s!AinXMMnLw-UDmWB_83VqFoaMWVzu?e=POiJTf))
 If you have downloaded our project and configured the environment, you only need to enter "download_path/home" to execute our sample app with the following command:
 ```
 python code/start.py -app_path app/anymemo.apk -json_name _anymemo -device_serial emulator-5554 -root_path download_path/home -choice 1 -event_num 400 -max_time 57600 -result_path output
@@ -62,8 +62,12 @@ Here,
 * `-event_num` number of events in each test
 * `-max_time` allocates the running time of PBFDroid (in seconds)
 
-#### Record DMF
+#### Record DMF ([video tutorial](https://1drv.ms/f/s!AinXMMnLw-UDmWB_83VqFoaMWVzu?e=POiJTf))
 You can start the DMF instantiator module for defining DMF with the following command:
 ```
 python code/start.py -root_path dmf/ -choice 2 -app_path app/APPNAME.apk -json_name _activitydiary -device_serial emulator-5554
 ```
+
+### User manual
+
+Before conducting user study, we created a user manual for PBFDroid, you can find it [here](https://1drv.ms/f/s!AinXMMnLw-UDmWO3HuF8PVR6DW0f?e=isSbCN)).
