@@ -70,4 +70,4 @@ python code/start.py -root_path dmf/ -choice 2 -app_path app/APPNAME.apk -json_n
 
 ### User manual
 
-Before conducting user study, we created a user manual for PBFDroid, you can find it [here](https://1drv.ms/f/s!AinXMMnLw-UDmWO3HuF8PVR6DW0f?e=isSbCN)).
+Before conducting user study, we created a user manual for PBFDroid, you can find it [here](https://sy8pzmhmun.feishu.cn/docx/EIEsdCDFKoBIz1x17uuc2DyqnNc?from=from_copylink)).
