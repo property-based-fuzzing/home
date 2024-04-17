@@ -157,13 +157,13 @@ class Fuzzing(object):
                         f_dmf.flush()
                     elif execute_result != "False":
                         print("fail"+"::"+execute_result+"\n\n")
+                        f_dmf.write("fail"+"::"+execute_result+"\n\n")
+                        f_dmf.flush()
                         i=0
                         while i<len(self.items):
                             f_dmf.write("list::"+self.items[i]+"::"+'::'.join(self.itemsdetail[i])+"\n")
                             print("list::"+self.items[i]+"::"+'::'.join(self.itemsdetail[i])+"\n")
                             i=i+1
-                        f_dmf.write("fail"+"::"+execute_result+"\n\n")
-                        f_dmf.flush()
                     else:
                         print("fail")
                         f_dmf.write("fail"+self.dmf_list[dmfnum].name+"\n")
@@ -367,10 +367,8 @@ class Fuzzing(object):
                     return findinfo
                 elif postcondition.relation == "not in" and view!=None:
                     return findinfo
-                else:
-                    f_dmf.write(findinfo+"\n")
-                    f_dmf.flush()
-                    return "True"
+                f_dmf.write(findinfo+"\n")
+                f_dmf.flush()
             #The second type is to judge whether there is a widget with recorded text in a data list in the current interface
             else:
                 i = 0 
@@ -383,8 +381,8 @@ class Fuzzing(object):
                     return findinfo
                 elif postcondition.relation == "not in" and view!=None:
                     return findinfo
-                else:
-                    return "True"
+                f_dmf.write(findinfo+"\n")
+                f_dmf.flush()
         
         return "True"
 
